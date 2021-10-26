@@ -1,40 +1,42 @@
 <template>
-  <div class="card">
-    <div class="card-header">
-        App
-    </div>
-    <div class="card-body">
-      <div id="app">
-        <div id="nav">
-          <router-link to="/">Home</router-link> |
-          <router-link to="/about">About</router-link>
+  <div id="app" class="d-flex flex-column vh-100">
+    
+    <app-header />
+
+    <div class="flex-grow-1 container-fluid">
+      <div class="row h-100">
+        <div class="col-md-6 col-lg-4 p-3 bg-dark">
+          <div class=" h-100 d-flex flex-column">
+            <div class="flex-grow-1" style="height:0px; overflowY:auto; overflowX:hidden">
+
+              <app-menu />
+
+            </div>
+          </div>
         </div>
-        <router-view/>
+        <div class="col-md-6 col-lg-8 p-3">
+          <div class=" h-100 d-flex flex-column">
+            <div class="flex-grow-1 overflow-auto pr-3" style="height:0px">
+
+              <router-view />
+
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  </div>    
 </template>
 
+<script>
+  import AppHeader from "./components/AppHeader.vue";
+  import AppMenu from "./components/AppMenu.vue";
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+  export default {
+    name: "App",
+    components: {
+      AppHeader: AppHeader,
+      AppMenu
+    }  
+  }
+</script>
