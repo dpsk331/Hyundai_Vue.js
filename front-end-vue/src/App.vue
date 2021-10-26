@@ -1,13 +1,20 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <a href="/">Home</a>
+  <div class="card">
+    <div class="card-header">
+        App
     </div>
-    <router-view/>
+    <div class="card-body">
+      <div id="app">
+        <div id="nav">
+          <router-link to="/">Home</router-link> |
+          <router-link to="/about">About</router-link>
+        </div>
+        <router-view/>
+      </div>
+    </div>
   </div>
 </template>
+
 
 <style>
 #app {
