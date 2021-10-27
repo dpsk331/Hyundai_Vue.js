@@ -40,3 +40,8 @@
     }  
   }
 </script>
+
+<!-- 전역 스타일은 App.vue 파일에서 적용 -->
+<style>
+
+</style>
