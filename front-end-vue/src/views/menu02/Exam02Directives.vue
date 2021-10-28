@@ -11,6 +11,24 @@
       </div>
 
       <hr />
+      
+      <!-- 요소 숨김 처리 -->
+      <!-- false시 DOM에서 아예 제거 -->
+      <span v-if="sale">
+        <img v-bind:src="require(`@/assets/photos/${phothFileName}`)" height="100" />
+      </span> 
+      <!-- false시 DOM에서 style="display: none;"로 숨김 처리 -->
+      <span v-show="sale">
+        <img v-bind:src="require(`@/assets/photos/${phothFileName}`)" height="100" />
+      </span>
+
+      <hr />
+
+      <!-- HTML 태그 처리 -->
+      <p>정보: {{info}}</p>
+      <p>정보: <span v-html="info" /></p>
+
+      <hr />
 
       <button class="btn btn-info btn-sm" @click="changeData">변경</button>
     </div>
@@ -28,7 +46,9 @@ export default {
   //컴포넌트에서 사용하는 데이터 정의
   data: function() { // () => {
     return {
-      phothFileName: "photo2.jpg"
+      phothFileName: "photo2.jpg",
+      sale: true,
+      info: `<div style="background-color: #eeeeee">스타일 적용 확인</div>`
     };
   },
   //컴포넌트에서 사용하는 메소드 정의
@@ -40,6 +60,7 @@ export default {
         this.phothFileName = "photo2.jpg";
       }
 
+      this.sale = !this.sale;
     }
   }
 }

@@ -25,7 +25,7 @@ export default {
     
   },
   //컴포넌트에서 사용하는 데이터 정의
-  data: function() { // () => {
+  data() { // () => {
     return {
       no: 1,
       name: "미니백",
