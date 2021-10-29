@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Menu01 from './menu01'
 import Menu02 from './menu02'
 import Menu03 from './menu03'
+import Menu04 from './menu04'
 
 Vue.use(VueRouter)
 
@@ -23,7 +24,8 @@ const routes = [
   },
   ...Menu01,
   ...Menu02,
-  ...Menu03
+  ...Menu03,
+  ...Menu04
 ]
 
 const router = new VueRouter({
