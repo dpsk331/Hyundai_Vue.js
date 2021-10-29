@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Menu01 from './menu01'
 import Menu02 from './menu02'
+import Menu03 from './menu03'
 
 Vue.use(VueRouter)
 
@@ -21,7 +22,8 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   ...Menu01,
-  ...Menu02
+  ...Menu02,
+  ...Menu03
 ]
 
 const router = new VueRouter({

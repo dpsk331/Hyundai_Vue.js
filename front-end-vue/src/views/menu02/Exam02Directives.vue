@@ -6,7 +6,7 @@
     </div>
     <div class="card-body">
       <div>
-        <img class="mr-2" src="@/assets/photos/photo1.jpg" height="100" />
+        <img class="mr-2" :src="require(`@/assets/photos/photo1.jpg`)" height="100" />
         <img v-bind:src="require(`@/assets/photos/${phothFileName}`)" height="100" />
       </div>
 
