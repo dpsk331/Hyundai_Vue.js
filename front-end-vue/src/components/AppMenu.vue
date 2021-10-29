@@ -26,6 +26,7 @@
     <li class="nav-item">
       <h6 class="text-white">Menu03: Event Handling & Watch</h6>
       <router-link to="/menu03/exam01eventhandling" class="nav-link text-warning">이벤트 처리</router-link>
+      <router-link to="/menu03/exam02watch" class="nav-link text-warning">데이터 변경 감시</router-link>
     </li>
   </ul>
 </template>
