@@ -47,6 +47,7 @@
     <li class="nav-item">
       <h6 class="text-white">Menu07: Axios sAJAX</h6>
       <router-link to="/menu07/exam01asynccontrol" class="nav-link text-warning">비동기 작업 도중에 보여줄 스피너</router-link>
+      <router-link to="/menu07/auth/jwtauth" class="nav-link text-warning">JWT 인증</router-link>
     </li>
   </ul>
 </template>
