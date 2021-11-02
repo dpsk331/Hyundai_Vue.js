@@ -6,6 +6,8 @@ import Menu02 from './menu02'
 import Menu03 from './menu03'
 import Menu04 from './menu04'
 import Menu05 from './menu05'
+import Menu06 from './menu06'
+import menu07 from './menu07'
 
 Vue.use(VueRouter)
 
@@ -27,7 +29,9 @@ const routes = [
   ...Menu02,
   ...Menu03,
   ...Menu04,
-  ...Menu05
+  ...Menu05,
+  ...Menu06,
+  ...menu07
 ]
 
 const router = new VueRouter({
