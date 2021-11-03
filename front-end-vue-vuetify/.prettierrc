@@ -1,0 +1,9 @@
+{
+  "singleQuote": false, // 문자열 작은 따옴표('') 사용 Off 설정
+  "semi": true, // 세미콜론(;) 사용 On 설정
+  "useTabs": false, // 탭 사용 Off 설정
+  "tabWidth": 2, // 탭 했을 때 스페이스 크기(2칸)로 설정
+  "trailingComma": "all", // 콤마(,) 사용 설정
+  "printWidth": 100 // 줄바꿈 설정
+}
+
