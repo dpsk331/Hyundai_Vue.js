@@ -1,4 +1,4 @@
-# front-end
+# front-end-vue-vuetify
 
 ## Project setup
 ```
