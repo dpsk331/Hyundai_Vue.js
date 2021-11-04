@@ -20,7 +20,7 @@
   </v-card>
 </template>
 
-<script>
+<script> 
 export default {
   name:"About",
   components: {
