@@ -10,6 +10,16 @@
       <div class="text-h6 text-md-h4 text-lg-h2">text-h6</div>
       <div class="text-body-1">text-body-1</div>
     </v-card-text>
+    <v-divider />
+    <v-card-text class="black--text">
+      <p class="text-left">text-left</p>
+      <p class="text-center">text-center</p>
+      <p class="text-right">text-right</p>
+      <p class="text-sm-left">text-sm-left</p>
+      <p class="text-md-center">text-md-center</p>
+      <p class="text-lg-right">text-lg-right</p>
+      <p class="text-xl-center">text-xl-center</p>
+    </v-card-text>
   </v-card>
 </template>
 

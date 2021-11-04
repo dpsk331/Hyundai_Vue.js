@@ -46,6 +46,15 @@
             </v-list-item-content>
           </v-list-item>
         </v-list-group>
+
+        <v-list-item to="/gridsystem">
+          <v-list-item-icon>
+            <v-icon>mdi-view-grid-outline</v-icon>
+          </v-list-item-icon>
+          <v-list-item-content>
+            <v-list-item-title>Grid System</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
 
