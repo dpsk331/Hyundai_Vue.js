@@ -4,6 +4,15 @@ let boards = [
   {bno:3, btitle:"제목3", bwriter:"글쓴이2", bdate:"2021-08-09"}
 ];
 
+let board = {
+  bno: 1,
+  btitle: "title",
+  bcontent: "content",
+  bwriter: "writer",
+  bdate: "2021-11-09"
+}
+
 export default {
-  boards
+  boards,
+  board
 }

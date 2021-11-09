@@ -43,6 +43,10 @@
           </tr>
         </tbody>
       </table>
+
+      <div v-for="(value, name, index) in board" :key="index">
+        <p>({{index}} {{name}} : {{value}})</p>
+      </div>
     </div>
   </div>
 </template>
@@ -62,7 +66,8 @@ export default {
   data() { // () => {
     return {
       photos: photoData.photos,
-      boards: boardData.boards
+      boards: boardData.boards,
+      board: boardData.board
     };
   },
   //컴포넌트에서 사용하는 메소드 정의
